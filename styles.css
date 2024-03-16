@@ -1,0 +1,400 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+body{
+    background-color: #020659;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+    max-width: 834px;
+}
+
+header, main, footer{
+    background-color: #fff;
+}
+
+label span, input {
+    display: none;
+}
+
+nav{
+    background-color: #030A8C;
+    color:#fff;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* nav ul{
+    background-color: #030A8C;
+    text-align: center;
+    color:#fff;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    justify-items: center;
+    align-items: center;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} */
+
+h1 {
+    font-size:1.25em;
+    font-weight: bold;
+}
+h2, h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: .75em;
+}
+
+#smoothjazz{
+    background-image: linear-gradient(to right, #2104D9 , #000000);
+    color: #fff;
+}
+
+#smoothjazz h1{
+    padding: 0.5rem 0rem 1rem 1.5rem;
+}
+
+#smoothjazz p{
+    padding: 0rem 1rem 0.75rem 1.5rem;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 15px;
+}
+
+.scroll::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #590242;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background: #590242;
+    border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover{
+    background: #020659;
+}
+
+#trendingsongs{
+    color:#590242;
+}
+
+#trendingsongs h2{
+    padding: 2.5rem 0rem 0.5rem 2rem;
+}
+
+#trendingsongs h3{
+    padding: 0.5rem 0rem 0.75rem 0.25rem ;
+}
+
+#trendingsongs p{
+    padding: 0rem 0.25rem;
+}
+
+#trendingsongs a{
+    text-decoration: none;
+    color:#fff;
+    background-color: #590242;
+    padding: 0.5rem 1rem;
+    border-radius:5px;
+    position: relative;
+    top: 1.5rem;
+    left: 42.5rem;
+}
+
+.scroll{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section{
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div{
+    position:absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+
+audio{
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #fff;
+    border-radius:50%;
+}
+audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius:50%;
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(255,255,255,.75);
+}
+
+.songs2{
+    max-height: 500px;
+    padding:  0.75rem;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    background-color:#2699FB;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.songs2 section{
+    background-color: #0D8DFB;
+    padding: 0.5rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;;
+    justify-items: center;
+    align-items: center;
+}
+
+.songs2 section div{
+    text-align: center;
+}
+
+.songs2::-webkit-scrollbar{
+    width: 15px;
+}
+
+.songs2::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;
+}
+
+.songs2::-webkit-scrollbar-thumb{
+    background: #020659;
+    border-radius: 5px;
+}
+
+.songs3 section div{
+    text-align: center;
+}
+
+.songs3{
+    max-height: 500px;
+    padding: 0.75rem;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    background-color:#030A8C;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.songs3 section{
+    background-color: #020873;
+    padding: 0.5rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.songs3::-webkit-scrollbar{
+    width: 15px;
+}
+
+.songs3::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;
+}
+
+.songs3::-webkit-scrollbar-thumb{
+    background: #020659;
+    border-radius: 5px;
+}
+
+#playlists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#yourplaylists{
+    padding-top: 5rem;
+}
+
+#yourplaylists h2{
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    color: #590242;
+}
+
+#yourplaylists a{
+    text-decoration: none;
+    color:#fff;
+    background-color: #590242;
+    padding: 0.5rem 1rem;
+    border-radius:5px;
+    position: relative;
+    top: 1.5rem;
+    left: 15rem;
+}
+
+#curatedplaylists{
+    padding-top: 5rem;
+}
+
+#curatedplaylists a{
+    text-decoration: none;
+    color:#fff;
+    background-color: #590242;
+    padding: 0.5rem 1rem;
+    border-radius:5px;
+    position: relative;
+    top: 1.5rem;
+    left: 17rem;
+}
+
+#curatedplaylists h2{
+    padding-bottom: 0.75rem;
+    padding-left: 3.5rem;
+    color: #590242;
+
+}
+
+footer{
+    padding-top: 6rem;
+}
+
+footer p{
+    text-align: center;
+    padding-bottom: 1.75rem;
+    color: #590242;
+}
+
+@media screen and (max-width:375px){
+
+    body{
+        width:375px;
+    }
+    
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+  }
