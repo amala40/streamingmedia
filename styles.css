@@ -339,11 +339,6 @@ footer p{
 }
 
 @media screen and (max-width:375px){
-
-    body{
-        width:375px;
-    }
-    
 ul {
     overflow: hidden;
     max-height: 0;
@@ -397,4 +392,45 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-  }
+
+#playlists{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+.songs2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.songs2 section{
+    margin: 10px;
+    position: relative;
+}
+
+.songs2 section div{
+    text-align: center;
+}
+
+.songs3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.songs3 section{
+    margin: 10px;
+    position: relative;
+}
+
+.songs3 section div{
+    text-align: center;
+}
+
+
+}
