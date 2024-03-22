@@ -50,7 +50,7 @@ table {
 body{
     background-color: #020659;
     margin: 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+    font-family: "raleway", sans-serif;
     max-width: 834px;
 }
 
@@ -76,22 +76,21 @@ nav ul{
     padding: 1rem;
 }
 
-/* nav ul{
-    background-color: #030A8C;
-    text-align: center;
-    color:#fff;
-    list-style-type: none;
-    gap: 1rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    justify-items: center;
-    align-items: center;
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-} */
+.first{
+    max-width: 100%;
+}
 
+nav li{
+    display: inline;
+    max-width: 100px;
+}
+
+/* smooth jazz padding vertical scrolls gap font check and links  */
+
+.first{
+    font-size:1.25em;
+    font-weight: bold;
+}
 h1 {
     font-size:1.25em;
     font-weight: bold;
@@ -99,8 +98,15 @@ h1 {
 h2, h3 {
     font-size: 1em;
     font-weight: bold;
-    text-transform: uppercase;
 }
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: .75em;
+}
+
+
 p, dl, dd {
     font-size: 1em;
 }
@@ -140,6 +146,7 @@ footer p {
 
 #trendingsongs{
     color:#590242;
+    margin-bottom: 3rem;
 }
 
 #trendingsongs h2{
@@ -160,9 +167,12 @@ footer p {
     background-color: #590242;
     padding: 0.5rem 1rem;
     border-radius:5px;
-    position: relative;
-    top: 1.5rem;
-    left: 42.5rem;
+    float: right;
+    
+}
+
+a{
+    margin: 0.5rem;
 }
 
 .scroll{
@@ -263,8 +273,13 @@ audio::-webkit-media-controls-enclosure {
     color: #fff;
     display: grid;
     grid-template-columns: 0.25fr 0.75fr;
+    gap: 1rem;
     justify-items: center;
     align-items: center;
+}
+
+#boozy p{
+    min-height: 1;
 }
 
 .songs3::-webkit-scrollbar{
@@ -287,6 +302,7 @@ audio::-webkit-media-controls-enclosure {
 
 #yourplaylists{
     padding-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 #yourplaylists h2{
@@ -301,13 +317,12 @@ audio::-webkit-media-controls-enclosure {
     background-color: #590242;
     padding: 0.5rem 1rem;
     border-radius:5px;
-    position: relative;
-    top: 1.5rem;
-    left: 15rem;
+    float: right;
 }
 
 #curatedplaylists{
     padding-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 #curatedplaylists a{
@@ -316,9 +331,7 @@ audio::-webkit-media-controls-enclosure {
     background-color: #590242;
     padding: 0.5rem 1rem;
     border-radius:5px;
-    position: relative;
-    top: 1.5rem;
-    left: 17rem;
+    float: right;
 }
 
 #curatedplaylists h2{
@@ -339,6 +352,45 @@ footer p{
 }
 
 @media screen and (max-width:375px){
+body{
+    min-width: 375px;
+    margin: 0 auto;
+}
+nav ul{
+    justify-items: start;
+    align-items: start;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+nav li{
+    max-width: 160px;
+}
+
+nav{
+    padding-bottom: 1rem;
+}
+
+.first{
+    position: absolute;
+    left: 120px;
+    top: 19px;
+}
+
+.songs2 section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.songs3 section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 ul {
     overflow: hidden;
     max-height: 0;
@@ -396,14 +448,17 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #playlists{
     display: grid;
     grid-template-columns: 1fr;
-    }
+    overflow: hidden;
+} 
 
 .songs2{
+    width: 375px;
+    overflow: scroll;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden
 }
 
 .songs2 section{
@@ -416,11 +471,13 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 .songs3{
+    width: 375px;
+    overflow: scroll;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .songs3 section{
@@ -432,5 +489,43 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     text-align: center;
 }
 
+#curatedplaylists a{
+    float: left;
+}
+
+#yourplaylists a{
+    float: left;
+}
+
+#trendingsongs a{
+    float: left;
+}
+
+.songs2::-webkit-scrollbar{
+    width: 15px;
+}
+
+.songs2::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;
+}
+
+.songs2::-webkit-scrollbar-thumb{
+    background: #020659;
+    border-radius: 5px;
+}
+
+
+.songs3::-webkit-scrollbar{
+    width: 15px;
+}
+
+.songs3::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #020659;
+}
+
+.songs3::-webkit-scrollbar-thumb{
+    background: #020659;
+    border-radius: 5px;
+}
 
 }
