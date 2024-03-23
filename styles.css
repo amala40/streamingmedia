@@ -72,12 +72,13 @@ nav ul{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     justify-items: center;
-    align-items: center;
-    padding: 1rem;
+    align-items: end;
+    padding: 0.5rem 0 1rem 0;
 }
 
 .first{
     max-width: 100%;
+    
 }
 
 nav li{
@@ -88,14 +89,16 @@ nav li{
 /* smooth jazz padding vertical scrolls gap font check and links  */
 
 .first{
-    font-size:1.25em;
+    font-size:1.5rem;
     font-weight: bold;
 }
 h1 {
     font-size:1.25em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 h2, h3 {
+    text-transform: uppercase;
     font-size: 1em;
     font-weight: bold;
 }
@@ -119,12 +122,15 @@ footer p {
     color: #fff;
 }
 
+
+
 #smoothjazz h1{
-    padding: 0.5rem 0rem 1rem 1.5rem;
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
 
 #smoothjazz p{
-    padding: 0rem 1rem 0.75rem 1.5rem;
+    padding: 0rem 1rem 1rem 1.5rem;
+    line-height: 1.25rem;
 }
 
 .scroll::-webkit-scrollbar{
@@ -165,14 +171,24 @@ footer p {
     text-decoration: none;
     color:#fff;
     background-color: #590242;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius:5px;
     float: right;
-    
+    margin: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+nav a:hover{
+    background-color:#590242;
+}
+
+.first a:hover{
+    background-color: #030A8C;
 }
 
 a{
-    margin: 0.5rem;
+    text-decoration: none;
+    color:#fff;
 }
 
 .scroll{
@@ -230,9 +246,20 @@ audio::-webkit-media-controls-enclosure {
     padding: 0.5rem;
     color: #fff;
     display: grid;
-    grid-template-columns: 0.25fr 0.75fr;;
+    
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: start;
+}
+
+.songs2 h3{
+    padding: 0.25rem 0 0.5rem 0;
+
+}
+ 
+.songs2 p{
+    display: inline;
+    max-height: 50px;
 }
 
 .songs2 section div{
@@ -272,10 +299,14 @@ audio::-webkit-media-controls-enclosure {
     padding: 0.5rem;
     color: #fff;
     display: grid;
-    grid-template-columns: 0.25fr 0.75fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: start;
+}
+
+.songs3 h3{
+    padding: 0.25rem 0 0.5rem 0;
+  
 }
 
 #boozy p{
@@ -301,7 +332,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 #yourplaylists{
-    padding-top: 5rem;
+    padding-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -311,17 +342,20 @@ audio::-webkit-media-controls-enclosure {
     color: #590242;
 }
 
+
 #yourplaylists a{
     text-decoration: none;
     color:#fff;
     background-color: #590242;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius:5px;
     float: right;
+    margin: 0.5rem;
+    margin-left: 1.5rem;
 }
 
 #curatedplaylists{
-    padding-top: 5rem;
+    padding-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -329,10 +363,13 @@ audio::-webkit-media-controls-enclosure {
     text-decoration: none;
     color:#fff;
     background-color: #590242;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius:5px;
     float: right;
+    margin: 0.5rem;
+    margin-left: 1.5rem;
 }
+
 
 #curatedplaylists h2{
     padding-bottom: 0.75rem;
@@ -342,7 +379,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 footer{
-    padding-top: 6rem;
+    padding-top: 1rem;
 }
 
 footer p{
@@ -368,11 +405,7 @@ nav ul{
 }
 
 nav li{
-    max-width: 160px;
-}
-
-nav{
-    padding-bottom: 1rem;
+    max-width: 180px;
 }
 
 .first{
@@ -383,13 +416,19 @@ nav{
 
 .songs2 section{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
 }
+
+ 
 
 .songs3 section{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
 }
+
+
 
 ul {
     overflow: hidden;
@@ -461,13 +500,45 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     overflow-y: hidden
 }
 
+
+
 .songs2 section{
-    margin: 10px;
-    position: relative;
+    display: grid;
+    gap:0.25rem;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
 }
 
+ 
+
+.songs3 section{
+    display: grid;
+    grid-template-columns: none;
+    gap:0.25rem;
+    grid-template-rows: 1fr 1fr;
+}
+
+.songs2 div h3{
+    max-width: 100px;
+}
+
+.songs3 div h3{
+    max-width: 100px;
+}
+
+.mellow h3{
+    padding-bottom: 1.5rem;
+}
 .songs2 section div{
-    text-align: center;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    justify-items: center;
+}
+
+.songs3 section div{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    justify-items: center;
 }
 
 .songs3{
@@ -480,14 +551,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     overflow-y: hidden;
 }
 
-.songs3 section{
-    margin: 10px;
-    position: relative;
-}
-
-.songs3 section div{
-    text-align: center;
-}
 
 #curatedplaylists a{
     float: left;
